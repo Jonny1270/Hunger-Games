@@ -1,0 +1,16 @@
+import sys,time,random
+
+typing_speed = 50 #wpm
+def slow_type(t):
+    for l in t:
+        sys.stdout.write(l)
+        sys.stdout.flush()
+        time.sleep(random.random()*10.0/typing_speed)
+print('Challenger state your name')
+Challenger = input()
+print('Well ' + Challenger + ' Step into the arena, and may the odds be ever in your favor.')
+print('You step into your tube and come up into the arena, you think to yourself about what to do.')
+print('You decide you either need to run into the woods quickly, or run for the center for the good loot. Choose quickly.')
+print("Type Run to run, or Loot to loot. Make sure to use capital letters")
+decide = input()
+print("Ha what a pussy you are")
